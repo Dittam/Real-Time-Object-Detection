@@ -24,7 +24,7 @@ MobileNet-SSD removes the last fully connected layers in Mobilenet, keeping only
 
 ### MobileNet-SSD Architecture
 <p align="left">
-<img src="https://github.com/Dittam/Real-Time-Object-Detection/blob/master/screenshots/architecture.png" width="356" height="209">
+<img src="https://github.com/Dittam/Real-Time-Object-Detection/blob/master/screenshots/architecture.png" width="500" height="209">
 </p> 
 
 
