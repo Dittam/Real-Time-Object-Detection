@@ -23,6 +23,7 @@ SSD stands for single shot multibox detection. An algorithm designed to localize
 MobileNet-SSD removes the last fully connected layers in Mobilenet, keeping only the features extraction layers. The SSD algorithm is then added to the end of features extraction layers. Allowing the network to classify and localize objects in a single pass. 
 
 ### MobileNet-SSD Architecture
+The following uses VGG16 but conveys the basic concept of appending the SSD algorithm to the end of the features extraction layers
 <p align="left">
 <img src="https://github.com/Dittam/Real-Time-Object-Detection/blob/master/screenshots/architecture.png" width="500" height="209">
 </p> 
