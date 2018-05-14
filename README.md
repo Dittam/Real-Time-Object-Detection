@@ -1,7 +1,7 @@
 # Real-time object detection MobileNet-SSD
 Real-time object detection using a convolutional neural network. Implemented with the MobileNet-SSD model using TensoFlow API developed by Google.
 <p align="center">
-<img src="https://github.com/Dittam/FlappyAI/blob/master/assets/Title.png" width="358" height="337">
+<img src="https://github.com/Dittam/Real-Time-Object-Detection/blob/master/screenshots/main.JPG" width="358" height="337">
 </p>
 
 
@@ -24,7 +24,7 @@ MobileNet-SSD removes the last fully connected layers in Mobilenet, keeping only
 
 ### MobileNet-SSD Architecture
 <p align="left">
-<img src="https://github.com/Dittam/FlappyAI/blob/master/assets/networkDiagram.PNG" width="356" height="209">
+<img src="https://github.com/Dittam/Real-Time-Object-Detection/blob/master/screenshots/architecture.png" width="356" height="209">
 </p> 
 
 
