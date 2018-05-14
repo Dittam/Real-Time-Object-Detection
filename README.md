@@ -18,7 +18,7 @@ Real-time object detection using a convolutional neural network. Implemented wit
 ## MobileNet-SSD:
 MobileNet is a convolutional neural network architecture designed by Google for computationally inexpensive image classification and features extraction. However MobileNet alone cannot localize objects within an image.
 
-SSD stands for single shot multibox detection. An algorithm designed to localize objects via bounding boxes within an image. SSD draws had chosen default bounding boxes known as 'priors' onto the image then uses several metrics such as intersection-over-union to determine the best bounding boxes encompassing objects, drastically reducing computational cost compared to the brute force sliding window approach. The boxes are then classified using mobileNet. 
+SSD stands for single shot multibox detection. An algorithm designed to localize objects via bounding boxes within an image. SSD draws hand chosen default bounding boxes known as 'priors' onto the image then uses several metrics such as intersection-over-union to determine the best bounding boxes encompassing objects, drastically reducing computational cost compared to the brute force sliding window approach. The boxes are then classified using mobileNet. 
 
 MobileNet-SSD removes the last fully connected layers in Mobilenet, keeping only the features extraction layers. The SSD algorithm is then added to the end of features extraction layers. Allowing the network to classify and localize objects in a single pass. 
 
