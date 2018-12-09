@@ -1,0 +1,29 @@
+
+## Detection
+videoInput: 0 # Input Must be OpenCV readable default 0 
+visualize: True            # Disable for performance increase
+visText: False             # Display fps on visualization stream
+maxFrames: 5000            # only used if visualize==False
+width: 300                  # OpenCV only supports 4:3 formats others will be converted
+height: 500                 # 600x600 leads to 640x480  def 300x500
+fpsInterval: 5             # Interval [s] to print fps of the last interval in console
+detInterval: 500           # intervall [frames] to print detections to console
+thres: 0.5                 # detection threshold for det_intervall
+splitModel: False          # Splits Model into a GPU and CPU session (currently only works for ssd_mobilenets)
+logDevice: False           # Logs GPU / CPU device placement
+allowMemGrth: True   # limits memory allocation to the actual needs
+imagePath: 'test_images'   # used for image_detection.pyq
+ssdShape: 300              # used for the split model algorithm
+                            # currently only supports ssd networks trained on 300x300 and 600x600 input
+
+## Tracking
+useTracker: False          # Use a Tracker (currently only works properly without split_model)
+trackerFrames: 5           # Number of tracked frames between detections
+numTrackers: 5             # Max number of objects to track
+
+
+## Model
+modelName: 'ssd_mobilenet_v11_coco'
+modelPath: 'models/ssd_mobilenet_v11_coco/frozen_inference_graph.pb'
+labelPath: 'object_detection/data/mscoco_label_map.pbtxt'
+numClasses: 90
